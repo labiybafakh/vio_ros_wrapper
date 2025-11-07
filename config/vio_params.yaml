@@ -1,0 +1,11 @@
+# VIO ROS2 Configuration
+
+# Topic names
+left_image_topic: "/camera/left/image_raw"
+right_image_topic: "/camera/right/image_raw"
+imu_topic: "/imu/data"
+
+# Subscriber settings
+queue_size: 10
+
+# VIO parameters (TODO: add more as needed)
