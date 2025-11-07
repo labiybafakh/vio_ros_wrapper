@@ -2,7 +2,39 @@
 
 ROS2 wrapper for lightweight Visual-Inertial Odometry system.
 
-Supports **Stereo VIO/VO** and **RGBD VIO/VO** modes.
+Supports **Stereo VIO** and **RGBD VO** modes.
+
+## Demo
+
+[![Demo Video](https://img.youtube.com/vi/aat8Nvcq-c8/0.jpg)](https://youtu.be/aat8Nvcq-c8)
+
+---
+
+## About
+
+This project implements the statistical uncertainty learning method proposed in:
+
+**Statistical Uncertainty Learning for Robust Visual-Inertial State Estimation**  
+Seungwon Choi, Donggyu Park, Seo-Yeon Hwang, Tae-Wan Kim  
+arXiv:2510.01648
+
+**Original Source**: [https://github.com/93won/lightweight_vio](https://github.com/93won/lightweight_vio)
+
+### Citation
+
+If you use this work in your research, please cite:
+
+```bibtex
+@misc{choi2025statistical,
+      title={Statistical Uncertainty Learning for Robust Visual-Inertial State Estimation}, 
+      author={Seungwon Choi and Donggyu Park and Seo-Yeon Hwang and Tae-Wan Kim},
+      year={2025},
+      eprint={2510.01648},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2510.01648}
+}
+```
 
 ---
 
@@ -61,7 +93,7 @@ Pre-recorded ROS2 bags for testing:
 
 ## Quick Start
 
-### RGBD Visual Odometry (OpenLORIS Cafe Dataset)
+### RGBD VO (OpenLORIS Cafe Dataset)
 
 ```bash
 # Terminal 1
