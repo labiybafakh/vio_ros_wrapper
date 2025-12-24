@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  vio_ros_wrapper:
+    build: .
+    container_name: vio_ros_wrapper
+    volumes:
+      - .:/workspace/src/vio_ros_wrapper
+      - ./bags:/workspace/bags
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY=${DISPLAY}
+      - DISPLAY=host.docker.internal:0
+      - QT_X11_NO_MITSHM=1
+    network_mode: host
+    stdin_open: true
+    tty: true
+    command: /bin/bash
